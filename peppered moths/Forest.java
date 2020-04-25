@@ -17,7 +17,7 @@ public class Forest extends World
     private static final int WIDTH = 80;
     // The default depth of the grid.
     private static final int HEIGHT = 60;
-    // The probability that a bird will be created in any given grid position (in percent).
+    // The probability that a bird wil be created in any given grid position (in percent).
     private static final int BIRD_CREATION_PROBABILITY = 2;
     // The probability that a moth will be created in any given grid position (in percent).
     private static final int MOTH_CREATION_PROBABILITY = 4;
