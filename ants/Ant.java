@@ -4,7 +4,7 @@ import greenfoot.*;
  * An ant that collects food.
  * 
  * @author Michael Kölling
- * @version 0.1
+ * @version 0.1 
  */
 public class Ant extends Creature
 {
