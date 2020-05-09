@@ -108,7 +108,14 @@ public class Ant extends Creature
     }
     private boolean smellsPheromone()
     {
-        
+        if(getOneIntersectingObject(Pheromone.class) != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     private void walkTowardsPheromoneCenter()
     {
