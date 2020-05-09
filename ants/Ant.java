@@ -95,7 +95,16 @@ public class Ant extends Creature
     }
     private void handlePheromoneDrop()
     {
-        
+        if(phAvailable == MAX_PH_AVAILABLE)
+        {
+            Pheromone pheromone = new Pheromone();
+            getWorld().addObject(pheromone, getX(), getY());
+            phAvailable = 0;
+        }
+        else
+        {
+            phAvailable++;
+        }
     }
     private boolean smellsPheromone()
     {
