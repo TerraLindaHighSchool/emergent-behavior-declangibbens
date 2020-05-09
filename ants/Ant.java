@@ -65,6 +65,7 @@ public class Ant extends Creature
         if(carryingFood)
         {
             walkTowardsHome();
+            handlePheromoneDrop();
             if(atHome())
             {
                 setImage(image1);
