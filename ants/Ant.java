@@ -119,6 +119,14 @@ public class Ant extends Creature
     }
     private void walkTowardsPheromoneCenter()
     {
-        
+        if(getOneIntersectingObject(Pheromone.class) != null)
+        {
+            headTowards(this);
+            walk();
+            if (this.getX() == getX() && this.getY() == getY())
+            {
+                followTrailTimeRemaining = TIME_FOLLOWING_TRAIL ;
+            }
+        }
     }
 }
